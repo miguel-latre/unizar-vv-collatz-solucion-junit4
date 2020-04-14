@@ -2,8 +2,6 @@ package es.unizar.eina.vv6f.collatz;
 
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
 @SuppressWarnings("ResultOfMethodCallIgnored")
 public class SecuenciaCollatzTestNoValidos {
 

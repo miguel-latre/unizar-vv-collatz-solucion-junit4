@@ -24,8 +24,8 @@ public class IniciadorSecuenciaMasLargaTest {
 				new Object[]{ 7, 6},
 				new Object[]{ 8, 7},
 				new Object[]{ 9, 7},
-				new Object[]{10, 9}
-//				new Object[]{1_000_000, 837_799}
+				new Object[]{10, 9},
+				new Object[]{11, 9}
 		);
 	}
 

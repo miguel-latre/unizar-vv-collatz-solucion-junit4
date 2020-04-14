@@ -15,33 +15,29 @@ public class SecuenciaCollatzTestLongitud {
 	@Parameters
 	public static Iterable<Object[]> data() {
 		return Arrays.asList(
-				new Object[] {  1,  1 },
-				new Object[] {  2,  2 },
-				new Object[] {  3,  8 },
-				new Object[] {  4,  3 },
-				new Object[] {  5,  6 },
-				new Object[] {  6,  9 },
-				new Object[] {  7, 17 },
-				new Object[] {  8,  4 },
-				new Object[] {  9, 20 },
-				new Object[] { 10,  7 },
 				new Object[] { 13, 10 },
-				new Object[] { 16,  5 },
-				new Object[] { 20,  8 },
-				new Object[] { 40,  9 });
+				new Object[] { 40, 9 },
+				new Object[] { 20, 8 },
+				new Object[] { 10, 7 },
+				new Object[] { 5, 6 },
+				new Object[] { 16, 5 },
+				new Object[] { 8, 4 },
+				new Object[] { 4, 3 },
+				new Object[] { 2, 2 },
+				new Object[] { 1, 1 });
 	}
 
-	private long n;
-	private int length;
+	private final long n;
+	private final int longitud;
 	
-	public SecuenciaCollatzTestLongitud(long n, int length) {
+	public SecuenciaCollatzTestLongitud(long n, int longitud) {
 		this.n = n;
-		this.length = length;
+		this.longitud = longitud;
 	}
 	
 	@Test
 	public void testLongitudCollatz() {
-		assertEquals(length, new SecuenciaCollatz(n).longitud());
+		assertEquals(longitud, new SecuenciaCollatz(n).longitud());
 	}
 
 }

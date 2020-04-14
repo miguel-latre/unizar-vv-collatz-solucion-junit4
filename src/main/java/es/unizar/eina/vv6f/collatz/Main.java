@@ -51,16 +51,16 @@ public class Main {
      *         tiene asociada la secuencia de Collatz más larga.
      */
     public static long iniciadorSecuenciaMasLarga(int limite) {
-        int maxValue = 1;
-        int maxLength = new SecuenciaCollatz(1).longitud();
-        for (int candidate = 2; candidate < limite; candidate++) {
-            int length = new SecuenciaCollatz(candidate).longitud();
-            if (length > maxLength) {
-                maxValue = candidate;
-                maxLength = length;
+        int iniciadorMax = 1;
+        int longitudMax = new SecuenciaCollatz(1).longitud();
+        for (int candidato = 2; candidato < limite; candidato++) {
+            int longitud = new SecuenciaCollatz(candidato).longitud();
+            if (longitud > longitudMax) {
+                iniciadorMax = candidato;
+                longitudMax = longitud;
             }
         }
-        return maxValue;
+        return iniciadorMax;
     }
 
     /**

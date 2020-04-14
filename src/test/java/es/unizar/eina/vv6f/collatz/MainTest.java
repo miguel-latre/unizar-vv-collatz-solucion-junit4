@@ -9,10 +9,17 @@ import java.util.Scanner;
 
 import static org.junit.Assert.*;
 
+/**
+ *  Clase para hacer «pruebas de sistema» de la aplicación.
+ */
 public class MainTest {
 
-    @SuppressWarnings("FieldCanBeLocal")
-    private static int SOLUTION = 837_799;
+    /**
+     * La solución al problema no forma parte del enunciado y, por tanto, de la «test basis».
+     * Sin embargo, se ha validado resolviendo el problema 14 de Project Euler,
+     * introduciéndola en https://projecteuler.net/problem=14
+     */
+    private static final int SOLUTION = 837_799;
     private PrintStream oldOut;
     private ByteArrayOutputStream fakeOut;
     private Scanner fakeOutScanner;
