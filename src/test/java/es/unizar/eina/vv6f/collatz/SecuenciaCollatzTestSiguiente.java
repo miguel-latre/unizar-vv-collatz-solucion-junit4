@@ -17,6 +17,8 @@ public class SecuenciaCollatzTestSiguiente {
     @Parameters
     public static Iterable<Object[]> data() {
         List<Object[]> datos = new ArrayList<>();
+        // Se añaden a la lista de datos para los test pares (n, siguienteCollatz), siguiendo
+        // la secuencia de ejemplo del enunciado
         for (int i = 0; i < SECUENCIA_EJEMPLO.length - 1; i++) {
             datos.add(new Object[] { SECUENCIA_EJEMPLO[i], SECUENCIA_EJEMPLO[i + 1]});
         }

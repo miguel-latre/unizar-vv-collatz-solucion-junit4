@@ -15,6 +15,8 @@ public class IniciadorSecuenciaMasLargaTest {
 
 	@Parameterized.Parameters
 	public static Iterable<Object[]> data() {
+		// Pares (límite, generador de la secuenca más larga por debajo del límite) obtenidos
+		// calculando los generadores más largos por debajo de cada número del 1 al 10.
 		return Arrays.asList(
 				new Object[]{ 2, 1},
 				new Object[]{ 3, 2},
