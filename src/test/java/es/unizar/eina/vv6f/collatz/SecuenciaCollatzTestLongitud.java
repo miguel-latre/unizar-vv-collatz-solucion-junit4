@@ -1,8 +1,11 @@
 package es.unizar.eina.vv6f.collatz;
 
+import static es.unizar.eina.vv6f.collatz.SecuenciaCollatzTest.SECUENCIA_EJEMPLO;
 import static org.junit.Assert.assertEquals;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -14,17 +17,13 @@ public class SecuenciaCollatzTestLongitud {
 
 	@Parameters
 	public static Iterable<Object[]> data() {
-		return Arrays.asList(
-				new Object[] { 13, 10 },
-				new Object[] { 40, 9 },
-				new Object[] { 20, 8 },
-				new Object[] { 10, 7 },
-				new Object[] { 5, 6 },
-				new Object[] { 16, 5 },
-				new Object[] { 8, 4 },
-				new Object[] { 4, 3 },
-				new Object[] { 2, 2 },
-				new Object[] { 1, 1 });
+		List<Object[]> datos = new ArrayList<>();
+		for (int i = 0; i < SECUENCIA_EJEMPLO.length; i++) {
+			// Se añaden a la lista de datos para los test pares (n, longitud), siguiendo
+			// la secuencia de ejemplo del enunciado
+			datos.add(new Object[] { SECUENCIA_EJEMPLO[i], SECUENCIA_EJEMPLO.length - i});
+		}
+		return datos;
 	}
 
 	private final long n;
