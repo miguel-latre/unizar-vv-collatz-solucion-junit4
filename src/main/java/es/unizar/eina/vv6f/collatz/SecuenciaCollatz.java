@@ -27,6 +27,7 @@ public class SecuenciaCollatz {
 
 	private final long inicio;
 
+
 	/*
 	 * @param inicio
 	 *            el valor inicio, positivo, del que se quiere determinar
@@ -41,6 +42,7 @@ public class SecuenciaCollatz {
 		}
 	}
 
+	
 	/**
 	 * Calcula y devuelve la longitud de la secuencia de Collatz asociada a este
 	 * objeto.
