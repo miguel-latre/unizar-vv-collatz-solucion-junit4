@@ -3,7 +3,7 @@ package es.unizar.eina.vv6f.collatz;
 import org.junit.Test;
 
 @SuppressWarnings("ResultOfMethodCallIgnored")
-public class SecuenciaCollatzTestNoValidos {
+public class SecuenciaCollatzTestClasesEquivalenciaNoValidas {
 
     @Test(expected = IllegalArgumentException.class)
     public void testSiguienteCollatz_0() {
